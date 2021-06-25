@@ -1,10 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <style>
+            .center {
+                margin: 0;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                -ms-transform: translate (-50%,-50%);
+                transform: (-50%,-50%)
+            }
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Search</title>
     </head>
     <body>
-        <form action="https://google.com/search">
+        <form class="center" action="https://google.com/search">
             <input type="text" name="q">
             <input type="submit" value="Google Search">
         </form>
