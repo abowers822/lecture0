@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+
+        <title>ImageSearch</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+        <style>
+            ::placeholder {
+                color: rgb(111, 0, 255);
+                opacity: 1; /* Firefox */
+                font-size:medium;
+            }
+
+            input[type="text"] {
+                padding: 12px 20px;
+                margin: 8px0;
+                box-sizing: border-box;
+                font-size:medium;
+                width: 200px;
+            }
+        .center {
+            position: absolute;
+            /*  top: 0;
+             bottom: 0; */
+            left: 40%;
+            top:50%;
+            margin: auto;  
+        }
+
+        table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 80%;
+        }
+
+        td, th {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #dddddd;
+        }
+        .container1 {
+            position:absolute;
+            margin: 5% 5% 20% 80%;
+
+        }
+        .c 
+           {
+            position: absolute;
+            left: 40%;
+            height: 300px;
+            }
+
+        .d {
+            position: absolute;
+            left: 40%;
+            top: 50%;
+            }
+
+        .e {
+            position: relative;
+            left:0%;
+            top:0px;
+            }
+        form {
+            text-align: center;
+        }
+    </style>
+
+   </head>
+   <body>
+    <div class="container1">
+        <p><a href="index.html">Back</a></p>
+    </div>
+    
+    <form  action="https://www.google.com/search">
+        <input type="text" name="q" style="width: 45%;height:30px;margin-top:35%;border-radius:25px">
+        <input type="hidden" id="h1" name="tbm" value="isch">
+        <br><br>
+        <input type="submit" value="Google Image Search">
+    </form>
+   </body>
+</html>
