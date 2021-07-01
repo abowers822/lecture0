@@ -1,143 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-
-
-        <title>ImageSearch</title>
+        <title>AdvancedSearch</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-        <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
-        <style>
-            ::placeholder {
-                color: rgb(111, 0, 255);
-                opacity: 1; /* Firefox */
-                font-size:medium;
-            }
-
-            input[type="text"] {
-                padding: 12px 20px;
-                margin: 8px0;
-                box-sizing: border-box;
-                font-size:medium;
-                width: 200px;
-            }
-        .center {
-            position: absolute;
-            /*  top: 0;
-             bottom: 0; */
-            left: 40%;
-            top:50%;
-            margin: auto;  
-        }
-
-        table {
-            font-family: arial, sans-serif;
-            border-collapse: collapse;
-            width: 80%;
-        }
-
-        td, th {
-            border: 1px solid #dddddd;
-            text-align: left;
-            padding: 8px;
-        }
-
-        tr:nth-child(even) {
-            background-color: #dddddd;
-        }
+    </head>
+    <style>
         .container1 {
-            position:absolute;
-            margin-top: 5%;
-            margin-left: 95%
-
+            margin-left:10%;text-align:left;margin-top:0%;margin-bottom:0%
         }
-        .containerFind {
-            position:absolute;
-            margin-top: 5%;
-            margin-bottom: 30%;
-            margin-left: 8%;
-            margin-right: 30%
-               }
-        .containerInput {
-            position:absolute;
-            margin-top: 5%;
-            margin-bottom: 30%;
-            margin-left: 20%;
-            margin-right:30%
+        .container2 {
+            margin-left:30%;text-align:left;margin-top:0
         }
-        .containerToDo {
-            position:absolute;
-            margin-top: 5%;
-            margin-bottom: 30%;
-            margin-left: 60%;
-        }
-        .c {
-            position: absolute;
-            left: 40%;
-            height: 300px;
-            }
-
-        .d {
-            position: absolute;
-            left: 40%;
-            top: 50%;
-            }
-
-        .e {
-            position: relative;
-            left:0%;
-            top:0px;
-            }
-        form {
-            text-align: center;
+        .container3 {
+             margin-left:60%; text-align:left;margin-top:-3%
         }
     </style>
-
-   </head>
-   <body>
-    <div class="container1">
-        <p><a href="index.html">Back</a></p>
-    </div>
-    <div class="containerFind">
-        <h4>Find pages with...</h4>
+    <body>
+        <div style="position:fixed; margin-left: 90%; margin-top:5%;margin-bottom:5%"><p><a href="index.html">Back</a></p></div>
+        <br><br>
+        <div style="margin-top:10%">
+            <h5 class="container1">Find pages with ...</h5>
+            <h5 style="margin-left:60%;margin-top:-3%">To do this in the search box</h5>
+        </div>
         <br>
-        <h6>all these words:<br><br><br><br>
-            this exact word or phrase:<br><br><br><br>
-            any of these words:<br><br><br><br>
-            none of these words:<br>
-        </h6>
-    </div>
-    <div class="containerInput">
-        <h4><br><br></h4>
         <form action="https://www.google.com/search">
-        <h6>
-            <input type="text" name="as_q" style="width: 200%;height:10px">
-            <br><br><br>
-            <input type="text" name="as_epq" style="width:200%;height:5px">
-            <br><br><br>
-            <input type="text" name="as_oq" style="width:200%;height:5px">
-            <br><br><br>
-            <input type="text" name="q" style="width:200%;height:5px">
-            <br><br>
-            <input  style=" margin-left: 135%; text-align:center; height:30px; background-color: blue; color: white;" type=" submit" value="Google Advanced Search">
-        </h6>
+             <h6 class="container1">All these words:</h6>
+             <h6 class="container2" style="margin-top:-1%"><input size=30% type="text" name="as_q"></h6>
         </form>
-    </div>
-    <div class="containerToDo" >
-        <h4> To do this in the search box</h4>
-        <br>
-        <h6>Type the important words:<i style="color:rgb(233, 213, 213)"> tricolor rat terrier</i>
-        <br><br><br><br>
-        Put exact words in quotes:<i style="color:rgb(233, 213, 213)"> "rat terrier"</i>
-        <br><br><br><br>
-        Type OR between all the words you want:<i style="color:rgb(233, 213, 213)"> minature OR standard</i>
-        <br><br><br><br>
-        Put a minus sign just before  words you don't want:<i style="color:rgb(233, 213, 213)"> -rodent, -"Jack Russell"
-        </i><br>
-    </h6>
-    </div>
-   </body>
+        </body>
+    </body>
 </html>
