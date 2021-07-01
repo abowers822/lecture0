@@ -1,99 +1,26 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-
-
-        <title>Search</title>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-        <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
-
-        <style>
-            ::placeholder {
-                color: rgb(111, 0, 255);
-                opacity: 1; /* Firefox */
-                font-size:medium;
-            }
-
-            input[type="text"] {
-                padding: 12px 20px;
-                margin: 8px0;
-                box-sizing: border-box;
-                font-size:medium;
-                width: 200px;
-            }
-        .center {
-            position: absolute;
-            /*  top: 0;
-             bottom: 0; */
-            left: 40%;
-            top:50%;
-            margin: auto;  
-        }
-
-        table {
-            font-family: arial, sans-serif;
-            border-collapse: collapse;
-            width: 80%;
-        }
-
-        td, th {
-            border: 1px solid #dddddd;
-            text-align: left;
-            padding: 8px;
-        }
-
-        tr:nth-child(even) {
-            background-color: #dddddd;
-        }
-        
-        .c {
-            position: absolute;
-            left: 40%;
-            height: 300px;
-            }
-
-        .d {
-            position: absolute;
-            left: 40%;
-            top: 50%;
-            }
-
-        .e {
-            position: relative;
-            left:0%;
-            top:0px;
-            }
-        form {
-            text-align: center;
-        }
-        .container1 {
-    position:absolute;
-    margin-top:2%;
-    margin-left:80%
-
-}
-    </style>
-
-
-
-    </head>
-    <body>
-
-        <div class="container1">
-            <p><a href="ImageSearch.html">Google Image Search</a></p>
-            <p><a href="AdvancedSearch.html">Google Advanced Search</a></p>
+<html>
+   <head>
+      <title>The W3.CSS Forms</title>
+      <meta name = "viewport" content = "width = device-width, initial-scale = 1">
+      <link rel = "stylesheet" href = "https://www.w3schools.com/lib/w3.css">
+   </head>
+   
+   <body>
+    <div style="position:fixed;margin-left: 90%; margin-top:5%;margin-bottom:5%"><p><a href="index.html">Back</a></p>
+    </div>
+      <form >
+         <div>
+             <h6>
+            <span style="position:absolute;margin-top:20%;margin-left:5%">All these words:</span>
+            <input id="1a"  type = "text" style = "position:absolute;margin-top:20%;margin-left:20%;width:20%;height:20px">
+            <span style="position:absolute;font-size: 13px;margin-left:45%;margin-top:20%">Type in the important words: <i style="font-size:11px">tricolor rat terrier</i></span>
+            </h6>
+            <h6>
+                <label for ="1b" style="margin-left:5%;width:20%">This exact word or phrase:</label>
+                <input id="1b"  type = "text" style = "width:30%">
+                <span style="font-size: 13px;position:relative"><i style="font-size: 11px;">italic type</i></span>
+                </h6>
         </div>
-        
-        <form  action="https://google.com/search">
-            <input type="text" name="q" style="width: 45%;height:30px;margin-top:25%;border-radius:25px">
-            <br><br>
-            <input type="submit" value="Google Search">
-        </form>
-        
-
-    </body>
+      </form>
+   </body>
 </html>
