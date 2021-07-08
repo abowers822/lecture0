@@ -1,36 +1,72 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <title>AdvancedSearch</title>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    </head>
-    <style>
-        .container1 {
-            margin-left:10%;text-align:left;margin-top:0%;margin-bottom:0%
-        }
-        .container2 {
-            margin-left:30%;text-align:left;margin-top:0
-        }
-        .container3 {
-             margin-left:60%; text-align:left;margin-top:-3%
-        }
-    </style>
-    <body>
-        <div style="position:fixed; margin-left: 90%; margin-top:5%;margin-bottom:5%"><p><a href="index.html">Back</a></p></div>
-        <br><br>
-        <div style="margin-top:10%">
-            <h5 class="container1">Find pages with ...</h5>
-            <h5 style="margin-left:60%;margin-top:-3%">To do this in the search box</h5>
-        </div>
-        <br>
-        <form action="https://www.google.com/search">
-             <h6 class="container1">All these words:</h6>
-             <h6 class="container2" style="margin-top:-1%"><input size=30% type="text" name="as_q"></h6>
-        </form>
-        </body>
-    </body>
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<body>
+
+    <div style="margin-top:5%;margin-left:90%;margin-bottom:15%">
+        <p><a href="index.html">Back</a></p>
+    </div>
+<form action="https://www.google.com/search">
+<div class="w3-cell-row">
+  <div class="w3-container  w3-quarter w3-mobile">
+    <h6><span style="padding-left:50px;"></span>Find pages with...</h6>
+  </div>
+  <div class="w3-container w3-quarter w3-mobile" >
+    <h6> </h6>
+  </div>
+  <div class="w3-container w3-quarter w3-mobile ">
+    <h6>To do this in the search box</h6>
+  </div>
+</div>
+<br><br>
+<div class="w3-cell-row" ></div>
+    <div class="w3-container  w3-quarter w3-mobile padding:0px">
+      <h6 style="margin-bottom:0px;margin-top:0px"><span style="padding-left:50px;"></span>All these words:</h6>
+    </div>
+    <div class="w3-container  w3-quarter w3-mobile" >
+      <h6 style="margin-top:0px;margin-bottom:0px"><input type="text" name="as_q" size="37"></h6>
+    </div>
+    <div class="w3-container w3-third w3-mobile ">
+      <h6 style="margin-top:0px">Type the important words:<i style="font-size:11px" > tricolor rat terrier</i></h6>
+    </div>
+</div>
+<div class="w3-cell-row" ></div>
+    <div class="w3-container  w3-quarter w3-mobile padding:0px">
+      <h6 style="margin-bottom:0px; margin-top:0px; padding-left:50px">This exact word or phrase:</h6>
+    </div>
+    <div class="w3-container  w3-quarter w3-mobile" >
+      <h6 style="margin-top:0px;margin-bottom:0px"><input type="text" name="as_epq" size="37"></h6>
+    </div>
+    <div class="w3-container w3-third w3-mobile ">
+      <h6 style="margin-top:0px">Put exact words in quotes:<i style="font-size:11px" > "rat terrier"</i></h6>
+    </div>
+</div>
+<div class="w3-cell-row" ></div>
+    <div class="w3-container  w3-quarter w3-mobile ">
+      <h6 style="margin-bottom:0px;margin-top:0px"><span style="padding-left:50px;"></span>Any of these words:</h6>
+    </div>
+    <div class="w3-container  w3-quarter w3-mobile" >
+      <h6 style="margin-bottom:0px;margin-top:0px"><input type="text" name="as_oq" size="37"></h6>
+    </div>
+    <div class="w3-container w3-third w3-mobile ">
+      <h6 style="margin-top:0px">Type OR between all the words you want:<i style="font-size:11px" > minature OR stand</i></h6>
+    </div>
+</div>
+<div class="w3-cell-row" ></div>
+    <div class="w3-container  w3-quarter w3-mobile ">
+      <h6 style="margin-bottom:0px;margin-top:0px"><span style="padding-left:50px;"></span>None of these words:</h6>
+    </div>
+    <div class="w3-container  w3-quarter w3-mobile" >
+      <h6 style="margin-bottom:0px;margin-top:0px"><input type="text" name="q" size="37"></h6>
+    </div>
+    <div class="w3-container w3-half w3-mobile ">
+      <h6 style="margin-top:0px">Put a minus sign just before the words you don't want:<i style="font-size:11px" > -rodent -"Jack Russell"</i></h6>
+    </div>
+</div>
+<br><br>
+<input  type="submit" value="Advanced Google Search" style=" margin-left: 30%; text-align:center; height:30px; background-color: blue; color: white">
+</form>
+</body>
 </html>
